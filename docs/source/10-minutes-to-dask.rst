@@ -373,6 +373,7 @@ triggering computation, we can inspect the task graph to figure out what's going
          >>> result.visualize()
 
       .. image:: images/10_minutes_dataframe_graph.png
+         :alt:
 
    .. group-tab:: Array
 
@@ -391,6 +392,7 @@ triggering computation, we can inspect the task graph to figure out what's going
          >>> b.visualize()
 
       .. image:: images/10_minutes_array_graph.png
+         :alt:
 
    .. group-tab:: Bag
 
@@ -406,6 +408,7 @@ triggering computation, we can inspect the task graph to figure out what's going
          >>> c.visualize()
 
       .. image:: images/10_minutes_bag_graph.png
+         :alt:
 
 Low-Level Interfaces
 --------------------

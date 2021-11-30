@@ -102,6 +102,7 @@ to get a true representation of what order the tasks will be executed in.
 
 
 .. image:: images/order-failure.png
+   :alt:
 
 In this visualization the nodes are colored by order of execution (from dark red
 to light yellow) and the node labels are the order Dask's assigned to each task.
@@ -139,6 +140,7 @@ see the effect of ordering:
 
 
 .. image:: images/order-success.png
+   :alt:
 
 At a glance, we can see that this ordering is looks much more regular and
 uniform. There's fewer lines crossing, and the color of the ordering moves

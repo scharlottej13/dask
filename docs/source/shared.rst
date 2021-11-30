@@ -119,6 +119,7 @@ are good at workflows with non-trivial cross-task
 communication; they have been removed from the plot.
 
 .. image:: images/scaling-edges.png
+   :alt:
 
 `Download scheduling script`_
 

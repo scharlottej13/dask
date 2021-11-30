@@ -268,12 +268,14 @@ are filled, we move across the "columns" first (along ``axis=1``), and then down
 to the next row.
 
 .. image:: images/reshape.png
+   :alt:
 
 Now consider the impact of Dask's chunking on this operation. If the slow-moving
 axis (just ``axis=0`` in this case) has chunks larger than size 1, we run into
 a problem.
 
 .. image:: images/reshape_problem.png
+   :alt:
 
 The first block has a shape ``(2, 2)``. Following the rules of ``reshape`` we
 take the two values from the first row of block 1. But then we cross a chunk
@@ -295,6 +297,7 @@ have two options
 Visually, here's the second option:
 
 .. image:: images/reshape_rechunked.png
+   :alt:
 
 Which if these is better depends on your problem. If communication is very
 expensive and your data is relatively small along the slow-moving axes, then
@@ -310,12 +313,14 @@ have ``chunksize=1`` on the slow-moving axes.
    >>> a.reshape(6, 4).visualize()
 
 .. image:: images/merge_chunks.png
+   :alt:
 
 .. code-block:: python
 
    >>> a.reshape(6, 4, merge_chunks=False).visualize()
 
 .. image:: images/merge_chunks_false.png
+   :alt:
 
 By default, some intermediate chunks chunks are merged, leading to a more complicated task
 graph. With ``merge_chunks=False`` we split the input chunks (leading to more overall tasks,
