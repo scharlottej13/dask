@@ -119,7 +119,7 @@ are good at workflows with non-trivial cross-task
 communication; they have been removed from the plot.
 
 .. image:: images/scaling-edges.png
-   :alt:
+   :alt: As the number of edges increase from 0 to 100 the time to schedule the entire graph using the threaded scheduler goes from 2 to 8 seconds and using the async scheduler goes from 0 to 3 seconds.
 
 `Download scheduling script`_
 

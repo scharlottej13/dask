@@ -373,7 +373,7 @@ triggering computation, we can inspect the task graph to figure out what's going
          >>> result.visualize()
 
       .. image:: images/10_minutes_dataframe_graph.png
-         :alt:
+         :alt: Rendered task graph with several nodes connected by arrows, dependent on one of the input blocks, with node names like "cumsum" and "getitem".
 
    .. group-tab:: Array
 
@@ -392,7 +392,7 @@ triggering computation, we can inspect the task graph to figure out what's going
          >>> b.visualize()
 
       .. image:: images/10_minutes_array_graph.png
-         :alt:
+         :alt: Two neighboring blocks with thin strips near their shared border representing the shared data.
 
    .. group-tab:: Bag
 
@@ -408,7 +408,7 @@ triggering computation, we can inspect the task graph to figure out what's going
          >>> c.visualize()
 
       .. image:: images/10_minutes_bag_graph.png
-         :alt:
+         :alt: A two-dimensional grid of blocks where the borders of each block has thin strips representing data shared from its neighbors. There are also small corner bits representing data shared from diagonal neighbors.
 
 Low-Level Interfaces
 --------------------

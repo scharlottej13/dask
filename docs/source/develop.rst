@@ -366,7 +366,7 @@ Distributed submit PRs.  In this case, the gpuCI bot will comment on the PR:
 .. note:: Can one of the admins verify this patch?
 
 .. image:: images/gputester-msg.png
-   :alt:
+   :alt: ""
 
 Dask Maintainers can then approve gpuCI builds for these PRs with following choices:
 
