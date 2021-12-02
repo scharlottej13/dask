@@ -7,7 +7,7 @@ Overview
 .. image:: images/array.png
    :width: 40 %
    :align: right
-   :alt: A dask array
+   :alt: A dask array.
 
 Dask arrays define a large array with a grid of blocks of smaller arrays.
 These arrays may be actual arrays or functions that produce arrays. We 

@@ -23,7 +23,7 @@ directly with a light annotation of normal python code:
    >>> z.visualize()
 
 .. image:: images/inc-add.svg
-   :alt: simple task graph created with dask.delayed
+   :alt: simple task graph created with dask.delayed.
 
 .. raw:: html
 
@@ -112,7 +112,7 @@ example, because these functions are already very small and fast.)
 
 .. image:: images/delayed-inc-double-add.svg
    :align: right
-   :alt: simple task graph created with dask.delayed
+   :alt: simple task graph created with dask.delayed.
 
 We can now compute this lazy result to execute the graph in parallel:
 

@@ -4,7 +4,7 @@ Images and Logos
 ================
 
 .. image:: images/dask_icon.svg
-   :alt: Dask logo
+   :alt: Dask logo.
 
 .. image:: images/dask_icon_no_pad.svg
    :alt: Dask logo without padding

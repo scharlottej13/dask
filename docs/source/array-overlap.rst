@@ -34,20 +34,20 @@ Consider two neighboring blocks in a Dask array:
 
 .. image:: images/unoverlapping-neighbors.png
    :width: 30%
-   :alt: un-overlapping neighbors
+   :alt: un-overlapping neighbors.
 
 We extend each block by trading thin nearby slices between arrays:
 
 .. image:: images/overlapping-neighbors.png
    :width: 30%
-   :alt: overlapping neighbors
+   :alt: overlapping neighbors.
 
 We do this in all directions, including also diagonal interactions with the
 overlap function:
 
 .. image:: images/overlapping-blocks.png
    :width: 40%
-   :alt: overlapping blocks
+   :alt: overlapping blocks.
 
 .. code-block:: python
 

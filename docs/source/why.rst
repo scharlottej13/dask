@@ -16,7 +16,7 @@ Python has grown to become the dominant language both in data analytics and
 general programming:
 
 .. image:: images/growth_of_languages.png
-   :alt: Growth of major programming languages
+   :alt: Growth of major programming languages.
    :width: 75%
 
 This is fueled both by computational libraries like Numpy, Pandas, and
@@ -24,7 +24,7 @@ Scikit-Learn and by a wealth of libraries for visualization, interactive
 notebooks, collaboration, and so forth.
 
 .. image:: images/growth_of_libraries.png
-   :alt: Stack overflow traffic to various packages
+   :alt: Stack overflow traffic to various packages.
    :width: 75%
 
 However, these packages were not designed to scale beyond a single machine.
