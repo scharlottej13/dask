@@ -118,9 +118,9 @@ Note: Neither the naive core scheduler nor the multiprocessing scheduler
 are good at workflows with non-trivial cross-task
 communication; they have been removed from the plot.
 
-.. image:: images/scaling-edges.png
-   :alt: As the number of edges increase from 0 to 100 the time to schedule the entire graph using the threaded scheduler goes from 2 to 8 seconds and using the async scheduler goes from 0 to 3 seconds.
-
+.. figure:: images/scaling-edges.png
+   :alt: Duration in seconds on the y-axis versus number of edges per task on the x-axis. As the number of edges increases from 0 to 100, the time to schedule the entire graph using the threaded scheduler goes from 2 to 8 seconds whereas using the async scheduler goes from 0 to 3 seconds.
+:caption: Scheduling overhead cost of the entire graph (left) vs. cost per edge (right) as the number of tasks increase.
 `Download scheduling script`_
 
 
