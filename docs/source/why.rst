@@ -24,7 +24,7 @@ Scikit-Learn and by a wealth of libraries for visualization, interactive
 notebooks, collaboration, and so forth.
 
 .. image:: images/growth_of_libraries.png
-   :alt: Growth of major python packages based on Stack Overflow's question views in World Bank high-income countries. A line graph with time on the x-axis from 2012 to 2018 and percent of overall question views each month on the y-axis. Pandas question views increased to about 0.9% in 2018, exceeding django and numpy.
+   :alt: Growth of major python packages based on Stack Overflow's question views in World Bank high-income countries. A line graph with time on the x-axis from 2012 to 2018 and percent of overall question views each month on the y-axis. Pandas question views increased to about 0.9% in 2018, exceeding Django and NumPy.
    :width: 75%
 
 However, these packages were not designed to scale beyond a single machine.

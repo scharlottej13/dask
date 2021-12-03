@@ -408,7 +408,7 @@ triggering computation, we can inspect the task graph to figure out what's going
          >>> c.visualize()
 
       .. image:: images/10_minutes_bag_graph.png
-         :alt: A two-dimensional grid of blocks where the borders of each block has thin strips representing data shared from its neighbors. There are also small corner bits representing data shared from diagonal neighbors.
+         :alt: A two-dimensional grid of blocks where the borders of each block have thin strips representing data shared from its neighbors. There are also small corner bits representing data shared from diagonal neighbors.
 
 Low-Level Interfaces
 --------------------

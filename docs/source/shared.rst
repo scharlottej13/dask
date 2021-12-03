@@ -102,7 +102,7 @@ The schedulers that depend on some sort of asynchronous pool have costs of a few
 milliseconds and the single threaded schedulers have costs of a few microseconds.
 
 .. figure:: images/scaling-nodes.png
-   :alt: Duration in seconds on the y-axis versus number of edges per task on the x-axis. 
+   :alt: Duration in seconds on the y-axis versus number of edges per task on the x-axis. The time to schedule the entire graph is constant initially, followed by a linear increase after roughly 500 tasks for multiprocessing and threaded schedulers and 10 tasks for async and core schedulers. The inverse is true for the cost per task, with a linear cost decrease, followed by more or less constant cost.
    
    Scheduling overhead for the entire graph (left) vs. per task (right)
 
