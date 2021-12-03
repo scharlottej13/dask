@@ -373,7 +373,7 @@ triggering computation, we can inspect the task graph to figure out what's going
          >>> result.visualize()
 
       .. image:: images/10_minutes_dataframe_graph.png
-         :alt: Rendered task graph with several nodes connected by arrows, dependent on one of the input blocks, with node names like "cumsum" and "getitem".
+         :alt: Dask task graph for the Dask dataframe computation. The task graph shows a "loc" and "getitem" operations selecting a small section of the dataframe values, before applying a cumulative sum "cumsum" operation, then finally subtracting a value from the result. This computation can be written as "ddf["2021-10-01": "2021-10-09 5:00"].a.cumsum() - 100".
 
    .. group-tab:: Array
 
@@ -392,7 +392,7 @@ triggering computation, we can inspect the task graph to figure out what's going
          >>> b.visualize()
 
       .. image:: images/10_minutes_array_graph.png
-         :alt: Two neighboring blocks with thin strips near their shared border representing the shared data.
+         :alt: Dask task graph for the Dask array computation. The task graph shows many "amax" operations on each chunk of the Dask array, that are then aggregated to find "amax" along the first array axis, then reversing the order of the array values with a "getitem" slicing operation, before an "add" operation to get the final result. This computation can be written as: "a.max(axis=1)[::-1] + 10".
 
    .. group-tab:: Bag
 
@@ -408,7 +408,7 @@ triggering computation, we can inspect the task graph to figure out what's going
          >>> c.visualize()
 
       .. image:: images/10_minutes_bag_graph.png
-         :alt: A two-dimensional grid of blocks where the borders of each block have thin strips representing data shared from its neighbors. There are also small corner bits representing data shared from diagonal neighbors.
+         :alt: Dask task graph for the Dask bag computation. The task graph shows a "lambda" operation, and then a "zip" operation is applied to the partitions of the Dask bag. There is no communication needed between the bag partitions, this is an embarrassingly parallel computation. This computation can be written as "db.zip(b, b.map(lambda x: x * 10))".
 
 Low-Level Interfaces
 --------------------
