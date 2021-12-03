@@ -16,7 +16,7 @@ Python has grown to become the dominant language both in data analytics and
 general programming:
 
 .. image:: images/growth_of_languages.png
-   :alt: Growth of major programing languages based on Stack Overflow’s question views in World Bank high-income countries. A line graph with time from 2012 to 2018 on the x-axis and percent of overall question views each month on the y-axis. Python’s question views increase from about 4% to about 11% from 2012 to 2018, reaching the popularity of Java and JavaScript.
+   :alt: Growth of major programming languages based on Stack Overflow’s question views in World Bank high-income countries. A line graph with time from 2012 to 2018 on the x-axis and percent of overall question views each month on the y-axis. Python’s question views increase from about 4% to about 11% from 2012 to 2018, reaching the popularity of Java and JavaScript.
    :width: 75%
 
 This is fueled both by computational libraries like Numpy, Pandas, and
