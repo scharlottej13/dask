@@ -101,7 +101,10 @@ overhead grows linearly.  The asymptotic cost per task depends on the scheduler.
 The schedulers that depend on some sort of asynchronous pool have costs of a few
 milliseconds and the single threaded schedulers have costs of a few microseconds.
 
-.. image:: images/scaling-nodes.png
+.. figure:: images/scaling-nodes.png
+   :alt: Duration in seconds on the y-axis versus number of edges per task on the x-axis. 
+   
+   Scheduling overhead for the entire graph (left) vs. per task (right)
 
 .. image:: images/crosstalk.png
    :width: 40 %
@@ -119,8 +122,10 @@ are good at workflows with non-trivial cross-task
 communication; they have been removed from the plot.
 
 .. figure:: images/scaling-edges.png
-   :alt: Duration in seconds on the y-axis versus number of edges per task on the x-axis. As the number of edges increases from 0 to 100, the time to schedule the entire graph using the threaded scheduler goes from 2 to 8 seconds whereas using the async scheduler goes from 0 to 3 seconds.
-:caption: Scheduling overhead cost of the entire graph (left) vs. cost per edge (right) as the number of tasks increase.
+   :alt: Duration in seconds on the y-axis versus number of edges per task on the x-axis. As the number of edges increases from 0 to 100, the time to schedule the entire graph using the threaded scheduler goes from 2 to 8 seconds whereas using the async scheduler goes from 0 to 3 seconds. The cost per edge decreases up until about 10 edges, after which the cost plateaus for both the threaded and async schedulers, with the async scheduler being consistenly faster.
+   
+   Scheduling overhead of the entire graph (left) vs. per edge (right)
+
 `Download scheduling script`_
 
 
